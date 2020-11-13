@@ -1,0 +1,13 @@
+.content {
+    grid-area: c;
+    background-color: coral;
+}
+
+.content.wallpapper img {
+    width: auto;
+}
+
+.content.avatar img {
+    width: 150px;
+    border-radius: 50px;
+}
