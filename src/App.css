@@ -3,6 +3,7 @@
   width: 1200px;
   margin: auto;
   color: aliceblue;
+  
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px;  */
@@ -10,25 +11,4 @@
   "n c";
 }
 
-.header {
-  grid-area: h;
-  background-color: rgb(64, 9, 116);
-}
 
-.header img {
-  width: 150px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: rgb(6, 6, 99);
-}
-
-a {
-  color: white;
-}
-
-.content {
-  grid-area: c;
-  background-color: coral;
-}
