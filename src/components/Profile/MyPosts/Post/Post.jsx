@@ -1,11 +1,11 @@
 import React, { Component } from 'react'; 
 import classes from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item}>
-            <img src="https://lh3.googleusercontent.com/proxy/jb8CV_XZfmwu-nRj6ssuMsCg4eOaEJKmQVEr8TwUWQXJlKQz4mCjbg0aO_mJ1TeUL5_eBi5pHlc_AIbKl0b3_I81JZOeJvVjJL49ahepvJiere7Ja8IGngJjD8o4sz2JAsJSxGkEr-r0Gqg9ex_wBriWvsGSRPwQvMjfwLtBFKtdiRT26lQEIbb-YamC-BiJM2PkfyAiCTKTqrSID2V8S24nLm7m28PG16hLoYMtzChYAmQEm97kTBqJSybejAVLrkgk12lLZjKvk2Pt2jGClUpTwJzrY7q4hKkGjV4MJ4lcKrR7z9Am8wj93B_QXaJV8GgqnaD-CcDw" alt="post avatar"/>
-            Post
+            <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/TH/en/19/HP0700-CUSA08526_00-PREMIUMAVATAR004/image?w=320&h=320&bg_color=000000&opacity=100&_version=00_09_000" alt="post avatar"/>
+            {props.message}; 
             <div>
                 <span>like</span>
             </div>
