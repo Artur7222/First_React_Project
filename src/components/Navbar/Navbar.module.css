@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+.item a:hover {
+    color: yellow;
+}
+
 .item a.activeLink {
     color: crimson;
 }
