@@ -20,22 +20,35 @@ const Message = (props) => {
 };
 
 const Dialogs = (props) => {
+
+    let dialogsData = [
+        {id: 1, name: 'Artur'},
+        {id: 2, name: 'Elvira'},
+        {id: 3, name: 'Ruslan'},
+        {id: 4, name: 'Lokki'}];
+
+    let messagessData = [
+        {id: 1, message: 'Надо закатать'},
+        {id: 2, message: 'Плов хочу'},
+        {id: 3, message: 'Хорошее имя у меня'},
+        {id: 4, message: 'Шнуры хочу'}];
+
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogs_items}>
-                <DialogItem name="Artur" id="1"/>
-                <DialogItem name="Elvira" id="2"/>
-                <DialogItem name="Ruslan" id="3"/>
-                <DialogItem name="Lokki" id="4"/>
+                <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
+                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
+                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id}/>
+                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id}/>
             </div>
             <div className={classes.messages}>
-                <Message message="Надо закатать"/>
-                <Message message="Плов хочу"/>
-                <Message message="Хорошее имя у меня"/>
-                <Message message="Шнуры хочу"/>
+                <Message message={messagessData[0].message}/>
+                <Message message={messagessData[1].message}/>
+                <Message message={messagessData[2].message}/>
+                <Message message={messagessData[3].message}/>
             </div>
         </div>
     );
 };
 
-export default Dialogs; 
+export default Dialogs;
