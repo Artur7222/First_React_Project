@@ -1,0 +1,13 @@
+.content.wallpapper img {
+    width: auto;
+}
+
+.content.avatar img {
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.description_block {
+    padding: 10px;
+}
