@@ -3,24 +3,3 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.dialogs_items .dialog {
-    padding: 10px;
-    text-decoration: none;
-}
-
-.dialog a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #9915dc;
-}
-
-.dialog.active {
-    color: #ffd529;
-}
-
-.messages .message {
-    padding: 10px;
-}
