@@ -3,3 +3,8 @@
     grid-template-columns: 2fr 10fr;
 }
 
+button {
+    padding: auto;
+    margin: 5px;
+}
+
