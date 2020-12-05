@@ -11,7 +11,7 @@ let store = {
                 {id: 2, message: "It's my first Salam", likescount: 25},
                 {id: 3, message: "It's my second Salam", likescount: 3},
                 {id: 4, message: "It's my third Salam", likescount: 14}],
-            newPostText: 'New post'
+            newPostText: ''
         },
         dialogsPage: {
             dialogs: [
@@ -24,7 +24,7 @@ let store = {
                 {id: 2, message: 'Плов хочу'},
                 {id: 3, message: 'Хорошее имя у меня'},
                 {id: 4, message: 'Шнуры хочу'}],
-            newMessageText: 'New Message'
+            newMessageText: ''
         },
         sideBar: {}
     },
@@ -47,31 +47,6 @@ let store = {
         this._state.sideBar = sideBarReducer(this._state.sideBar, action);
 
         this._callSubscriber(this._state);
-
-        // if (action.type === ADD_POST) {
-        //     let newPost = {
-        //         id: 5,
-        //         message: this._state.profilePage.newPostText,
-        //         likescount: 0
-        //     };
-        //     this._state.profilePage.posts.push(newPost);
-        //     this._state.profilePage.newPostText = '';
-        //     this._callSubscriber(this._state);
-        // } else if (action.type === UPDATE_NEW_POST_TEXT) {
-        //     this._state.profilePage.newPostText = action.newText;
-        //     this._callSubscriber(this._state);
-        // } else if (action.type === ADD_MESSAGE) {
-        //     let newMessage = {
-        //         id: 5,
-        //         message: this._state.dialogsPage.newMessageText,
-        //     };
-        //     this._state.dialogsPage.messages.push(newMessage);
-        //     this._state.dialogsPage.newMessageText = '';
-        //     this._callSubscriber(this._state);
-        // } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-        //     this._state.dialogsPage.newMessageText = action.newTextM;
-        //     this._callSubscriber(this._state);
-        // }
     }
 };
 
